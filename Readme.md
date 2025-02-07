@@ -8,8 +8,11 @@ The Avidian Project consists of three main parts:
 3. **Admin Panel** - Used to dynamically manage the frontend, also developed with React and Vite.
 
 Main directory - AVIDIAN
+
 Frontend dorectory - frontend
+
 Backend directory - backend-dotnet
+
 Admin Panel directory -Admin
 
 ## Video Walkthrough
@@ -19,10 +22,8 @@ Admin Panel directory -Admin
 ```sh
 # Clone the repository
 # Clone the repository
-git clone https://github.com/akthartauqeer/avidian_project.git
+git clone https://github.com/akthartauqeer/avidian-project.git
 
-# Navigate to the project directory
-cd avidian_project
 
 # Navigate to the project directory
 cd avidian-project
