@@ -61,7 +61,7 @@ For additional guidance, refer to the [Docker Documentation](https://docs.docker
 Since `firebaseserviceaccountkey.json` cannot be exposed, it will be provided personally via email. 
 
 After cloning the repository, follow these steps:
-1. Navigate to `dotnet-backend/FirebaseCredentials/firebaseserviceaccountkey.json`.
+1. Navigate to `dotnet-backend/FirebaseCredentials/serviceAccountKey.json`.
 2. The file will be empty in GitHub.
 3. Paste the contents from the email into this file.
 4. Run the `docker-compose up --build` command to start the project.
