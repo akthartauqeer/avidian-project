@@ -1,0 +1,131 @@
+.container {
+width: 98%;
+display: flex;
+justify-content: center;
+align-items: flex-start; /* Align items at the start */
+height: 90vh; /* Full screen height */
+width: 98%;
+padding-left: 10px; /* No padding */
+padding-right: 20px;
+margin-top: 80px;
+overflow-x: auto;
+margin-bottom: 40px;
+
+}
+.container .rando {
+    font-size: 1.8rem;
+    text-align: left; /* Change from center to left */
+    margin-bottom: 20px;
+    color: #333;
+}
+.container .content {
+    width: 100%; /* Take up a large portion of the screen */
+    /* Limit content width */
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* A slight shadow for depth */
+    padding: 20px 20px 0px 20px; /* Padding around the content */
+}
+
+.container .page {
+    width: 100%;
+}
+
+.container .random {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container .add-program-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .input {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .input-group,
+.container .query-row,
+.container .pdf-upload-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .pdf-upload-row {
+    margin-right: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.container .pdf-upload-input {
+    flex: 1;
+}
+
+.container .pdf-name-input {
+    flex: 3;
+    margin-left: 10px;
+}
+
+.container .add-pdf-btn-inline {
+    flex: 1;
+    width: 10%;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50; /* Green background for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container .add-pdf-btn-inline:hover {
+    background-color: #4CAF50; /* Green background for buttons */
+}
+
+.container .query-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container .add-query-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50; /* Green background for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+
+
+.submit-btn-container {
+    text-align: center;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+.remove-query-btn{
+    width: 20%;
+}

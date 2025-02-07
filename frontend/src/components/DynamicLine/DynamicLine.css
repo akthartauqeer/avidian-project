@@ -1,0 +1,16 @@
+.dynamic-line-chart {
+    width: auto; /* Ensure the chart takes full width */
+    padding: 10px; /* Slight padding to give breathing room */
+    box-sizing: border-box; /* Ensure padding doesn't overflow the container */
+    height: 100%; /* Ensure the chart fills the height of the container */
+}
+
+/* Height for small charts */
+.line-chart-small-height {
+    height: 340px; /* Small chart height */
+}
+
+/* Height for large charts */
+.line-chart-large-height {
+    height: 500px; /* Large chart height */
+}

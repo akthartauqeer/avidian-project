@@ -1,0 +1,63 @@
+/* Reset default margin and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the body takes up the full height */
+  width: 100%; /* Ensure the body takes up the full width */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* General layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-container .main-layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.main-layout.full-screen {
+  margin-top: 0;
+}
+
+.sidebar {
+  height: 99vh;
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  width: 200px;
+  background-color: #f8f8f8;
+  overflow-y: auto;
+}
+
+.app-container .content-area {
+  margin-left: 200px;
+  padding: 20px;
+  overflow-y: auto;
+  height: calc(100vh - 60px);
+  flex: 1;
+}
+
+.content-area.full-screen {
+  margin-left: 0;
+  height: 100vh;
+  padding: 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 10;
+  background-color: #f8f8f8;
+}
+
+/* New isolated styling for login page */

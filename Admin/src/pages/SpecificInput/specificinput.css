@@ -1,0 +1,287 @@
+
+.specific-inputs-container {
+    margin: 10px 10px 10px 10px;
+
+  position: relative;
+  }
+  .adddprogram-container{
+    width: 97%;
+  }
+  .main-heading-container {
+    margin-top: 10px;width: 160%;
+    border: 1px solid #ccc; /* Light gray border for Main Heading */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 60px;
+    background-color: #e0f7fa; /* Subtle light gray background for better visibility */
+}
+  
+  .program-heading-container {
+    border: 1px solid #ccc; /* Light gray border for Program Heading */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px 0; /* Space between program headings */
+    background-color:#ffebee; /* Slightly lighter gray background */
+    margin-bottom: 30px;
+  }
+  .query-container button{
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .query-container textarea{
+    height: 10vh;
+}
+  .query-container {
+    border: 1px solid #ccc; /* Light gray border for SQL Queries */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0; /* Space between queries */
+    background-color:#fffde7; /* White background for better readability */
+  }
+  .query-container label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .add-program-btn {
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 0.8em;
+  }
+  .add-query-btn {
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white;
+   font-size: 0.6rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 0px;
+  }  
+  .add-program-btn:hover,
+  .add-query-btn:hover,
+  .add-main-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 67%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px; /* Space below input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+  }
+  
+  select {
+    width: 30%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Light gray border */
+    margin-bottom: 10px;
+  }
+  .add-main-btn {
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white;
+    border: none;
+    width: 40%;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 55%;
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+
+  .push-btn{
+    background-color: #1F883D; /* Green background for buttons */
+    color: white;
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 50px;
+    font-size: 0.8em;   
+    margin-left: 60%;
+    margin-bottom: 30px;
+   
+  }
+
+  /* specificinput.css */
+
+/* General styling */
+
+
+
+
+
+
+
+
+/* Popup styling */
+
+
+
+/* Popup wrapper */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* Popup content container */
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 90%;
+    max-height: 90%; /* Ensure it stays within the viewport */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Scrollable table container */
+.table-container {
+    max-height: 40vh; /* Adjusted to avoid taking too much space */
+    max-width: 100%;
+    overflow: auto; /* Enable scrolling */
+    margin-bottom: 20px; /* Add margin for better spacing */
+}
+
+/* Graph container with limited height */
+.bar-graph-container {
+    max-height: 50vh; /* Adjust based on your needs */
+    overflow-y: auto; /* Allow scrolling if the graph is too big */
+    margin-bottom: 20px; /* Add some margin for better spacing */
+}
+
+/* Styling for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.input-groupp{
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  display: flex; /* Use flexbox to align items in a row */
+    align-items: center;
+}
+/* Table header styling */
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Buttons */
+.popup-content button[type="button"] {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+.popup-content button[type="button"]:hover {
+    background-color: #218838;
+}
+
+.popup-content button:last-of-type {
+    background-color: #dc3545;
+}
+
+.popup-content button:last-of-type:hover {
+    background-color: #c82333;
+}
+
+/* Representation dropdown */
+.popup-content select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Space between buttons */
+    margin-top: 50px; /* Optional: add some space above the buttons */
+    margin-left: 100px;
+}
+/* specificinput.css */
+
+/* General styles for remove buttons */
+.remove-btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: #ff4d4d; /* Red background color */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 5px 10px; /* Padding for better click area */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 12px; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for remove buttons */
+.remove-btn:hover {
+  background-color: #ff1a1a; /* Darker red on hover */
+}
+.tick-sign{
+  margin-left: 5px;
+}
+.query-item {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-bottom: 10px; /* Space between items */
+}
+
+.name-box {
+  width: 200px; /* Set a fixed width for the box */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  white-space: nowrap; /* Prevent text from wrapping */
+  border: 1px solid #ccc; /* Optional: Add a border */
+  padding: 5px; /* Optional: Add some padding */
+  margin-right: 5px; /* Space between the box and buttons */
+}
+
+.name-box span {
+  display: inline-block; /* Ensure the span takes the full width */
+}

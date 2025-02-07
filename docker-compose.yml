@@ -1,0 +1,45 @@
+version: "3.8"
+
+services:
+  backend:
+    image: tauqeerakthar/backend-dotnet
+    container_name: backend-container
+    depends_on:
+      - db
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db;Port=3306;Database=sample_dashboard;User=root;Password=NewPassword123!
+      - ConnectionStrings__LFE=Server=db;Port=3306;Database=LFE;User=root;Password=NewPassword123!
+      - ConnectionStrings__JPAL=Server=db;Port=3306;Database=JPAL;User=root;Password=NewPassword123!
+    ports:
+      - "5045:5045"
+
+  db:
+    image: tauqeerakthar/mysql:8.0
+    container_name: mysql-container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: NewPassword123!
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # ✅ Make sure init.sql exists
+
+  frontend:
+    image: tauqeerakthar/avidian-frontend
+    container_name: frontend-container
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  admin:
+    image: tauqeerakthar/avidian-admin
+    container_name: admin-container
+    ports:
+      - "3002:3002"
+    depends_on:
+      - backend
+
+volumes:
+  mysql_data: {}  # ✅ Corrected volume mapping

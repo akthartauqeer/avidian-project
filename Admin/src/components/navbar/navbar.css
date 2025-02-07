@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Add padding to the navbar */
+    background-color: #f8f8f8; /* Light shade for the navbar */
+    position: relative; 
+    
+  }
+  .navbar::after {
+    content: ''; /* Empty content for the border */
+    position: absolute; /* Position it absolutely */
+    bottom: 0; /* Align to the bottom of the navbar */
+    left: -10px; /* Start from the left */
+    right: -10px; /* Stretch to the right */
+    height: 1px; /* Thickness of the bottom border */
+    background-color: #333; /* Color of the border */
+}
+
+  
+  .company-logo {
+    height: 160px; /* Adjust as necessary */
+  }
+  
+  .profile-container {
+    position: relative; /* For positioning the logout option */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .logout-option {
+    position: absolute;
+    top: 100%; /* Position below the profile icon */
+    right: 0;
+    background-color: white; /* Background color for the logout option */
+    border: 1px solid #ccc; /* Border for the logout option */
+    padding: 5px 10px; /* Padding for the logout option */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    white-space: nowrap; /* Prevent text wrapping */
+    z-index: 1; /* Ensure it appears above other elements */
+  }
+  .profile-icon {
+    font-size: 36px; /* Adjust this value to make the icon larger */
+    color: #333; /* Change the color if needed */
+  }
+    

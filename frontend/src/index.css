@@ -1,0 +1,18 @@
+
+
+/* Apply DINNextLTPro to all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'DINNextLTPro', sans-serif; /* Use DIN Next LT Pro font */
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+#root {
+  height: 100%;
+}

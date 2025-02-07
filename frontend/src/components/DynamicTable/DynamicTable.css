@@ -1,0 +1,75 @@
+.table-container {
+    width: 100%; /* Full width of container */
+    margin-top: 10px;
+    padding: 0 10px 10px 10px;
+}
+
+table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Remove gaps between table cells */
+    margin-bottom: 10px;
+}
+
+th, td {
+    text-align: center; /* Center align content */
+    padding: 5px;
+}
+
+/* Header styling */
+thead th {
+    background-color: skyblue; /* Orange background for the header row */
+    color: #333; /* White text for better contrast */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border: 1px dotted black; /* Black dotted border for header cells */
+}
+
+/* Border styling for other cells */
+td {
+    border: 1px solid black; /* Orange dotted border for all other cells */
+}
+
+/* Specific styling for the Serial No. column */
+td.serial-number {
+    width: 10%; /* Fixed width for serial number column */
+    text-align: center; /* Center the serial number */
+}
+
+tr:nth-child(odd) {
+    background-color: white; /* Light gray background for odd rows */
+}
+
+tr:nth-child(even) {
+    background-color: whitesmoke; /* Light background for even rows */
+}
+
+tr:hover {
+    background-color: rgb(223, 237, 243); /* Highlight row on hover */
+}
+
+.table-scroll {
+    overflow-x: auto; /* Allows horizontal scrolling */
+    width: 100%; /* Full width to match container */
+}
+
+.table-scroll table {
+    width: 100%;
+    min-width: 600px; /* Set a minimum width if necessary */
+    border-collapse: collapse;
+}
+
+.table-scroll th, 
+.table-scroll td {
+    text-align: center;
+    font-size: 0.9rem;
+    white-space: nowrap; /* Prevents cell content wrapping */
+}
+/* Specific styling for the Serial No. column */
+td.serial-number, th.serial-number {
+    width: 50px; /* Adjust width to fit content more tightly */
+    text-align: center; /* Center the serial number */
+    padding: 5px; /* Reduce padding if needed to save space */
+    white-space: nowrap; /* Prevents wrapping of content */
+}

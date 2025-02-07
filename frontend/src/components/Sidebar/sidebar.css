@@ -1,0 +1,107 @@
+.sidebar {
+    width: 60px;
+    background-color: #333;
+    color: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease;
+    overflow: hidden; /* Prevents overflow from the sidebar itself */
+    flex-shrink: 0;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.sidebar.expanded {
+    width: 200px;
+}
+
+.hamburger-icon {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+}
+
+.menu-items {
+    flex: 1; /* This allows the menu items to take available space */
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    overflow-y: auto; /* Makes the menu items scrollable */
+}
+
+.menu-item,
+.submenu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-item.active,
+.submenu-item.active,
+.settings-item.active {
+    background-color: #0098d7;
+    color: #fff;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+}
+
+.menu-label,
+.submenu-label {
+    margin-left: 15px;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #d3d3d3;
+}
+
+.scrollable-pages {
+    max-height: 200px; /* Set height as needed */
+    overflow-y: auto; /* This allows the submenu items to scroll if they overflow */
+}
+
+.submenu-item {
+    padding-left: 15px;
+}
+
+.sidebar.collapsed .menu-label,
+.sidebar.collapsed .submenu-label {
+    display: none;
+}
+
+.menu-item:hover,
+.submenu-item:hover,
+.settings-item:hover {
+    background-color: #444;
+    transform: translateY(-0.5px) scale(1.05);
+}
+
+.menu-item.active:hover,
+.submenu-item.active:hover,
+.settings-item.active:hover {
+    background-color: #0098d7;
+}
+
+.settings-item {
+    margin-bottom: 30px; /* Space between settings item and footer */
+    padding: 8px 12px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    background-color: #2a2e2e;
+    color: #D3D3D3;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

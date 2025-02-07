@@ -1,0 +1,128 @@
+.boxes-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+  padding: 65px;
+}
+
+.box {
+  border-radius: 8px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 170px; /* Default height */
+}
+
+.box:hover {
+  transform: translate3d(0px, -1px, 1px) scale(1.005);
+}
+
+.box-image {
+  width: 100%;
+  height: 170px; 
+  background-image: url('/testbac.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #d3d3d3;
+}
+
+.boxtext {
+  padding: 2px;
+  font-size: 17px;
+  color: #333;
+  padding: 5px;
+  text-align: center;
+  flex: 1;
+}
+
+/* Settings button styling */
+
+
+.settings-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 10; /* Fixed the z-index for visibility */
+  transition: transform 0.3s ease;
+  margin-bottom: 10px;
+}
+.setting-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 10; /* Fixed the z-index for visibility */
+  transition: transform 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.setting-button:hover {
+  transform: scale(1.1); /* Slight scaling effect */
+}
+.settings-button:hover {
+  transform: scale(1.1); /* Slight scaling effect */
+}
+
+.settings-icon {
+  color: #fff;
+  font-size: 24px;
+}
+
+
+/* Media Queries */
+
+/* Large screens */
+@media (max-width: 1200px) {
+  .box {
+    height: 160px;
+  }
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .boxes-container {
+    grid-template-columns: repeat(4, 1fr); /* Adjust columns for medium screens */
+  }
+  .box {
+    height: 110px;
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .boxes-container {
+    grid-template-columns: repeat(4, 1fr); /* Adjust columns for small screens */
+  }
+  .box {
+    height: 90px;
+  }
+  .box-text {
+    font-size: 20px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+  .boxes-container {
+    grid-template-columns: repeat(4, 1fr); /* Adjust columns for small screens */
+  }
+  .box {
+    height: 60px;
+  }
+  .box-text {
+    font-size: 18px;
+  }
+}

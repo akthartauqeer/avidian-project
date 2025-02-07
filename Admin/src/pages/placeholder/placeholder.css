@@ -1,0 +1,116 @@
+/* Placeholder.css */
+.placeholder-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.placeholder-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.table-wrapper {
+    overflow-x: auto; /* Ensure the table has scrollable behavior */
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #f2f2f2;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #4CAF50; /* Color for icons */
+}
+
+.action-button:hover {
+    color: #45a049;
+}
+
+/* Modal styling */
+.placeholder-container .modal-content {
+    width: 28%; /* Control the size of the modal */
+    padding: 20px;
+    margin-left: 36%;
+    margin-right: 36%;
+    margin-top: 16%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.placeholder-container .modal-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.save-button:hover {
+    background-color: #45a049;
+}
+
+.cancel-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #e53935;
+}
+
+.modal-list {
+    text-align: left;
+}
+
+.modal-list label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-checkbox {
+    margin-right: 10px;
+}

@@ -1,0 +1,104 @@
+.filter-search-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+}
+
+.filter-search-container h2 {
+  margin-bottom: 20px;
+  color: #111;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjusts gap to fit button in line */
+  padding: 20px;
+  background-color: #eeebf7;
+  color: #111;
+  border: 1px solid #ccc;
+  align-items: center; /* Vertically aligns items in the center */
+  justify-content: flex-start;
+  border-radius: 12px;
+}
+
+/* Style for the "Clear All" button */
+.clear-filters-button {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  background-color: #1fb2f1;
+  color: #fff;
+  border: 1px solid #999;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background-color 0.3s;
+  align-self: center; /* Aligns with dropdowns vertically */
+  height: 35px; /* Matches dropdown height */
+}
+
+/* Hover effect */
+.clear-filters-button:hover {
+  background-color: #aaa888;
+  color: #fff;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex-basis: 18%; /* Reduces the dropdown width slightly */
+  min-width: 140px; /* Smaller minimum width for compact dropdowns */
+  margin-bottom: 20px;
+}
+
+.dropdown label {
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.dropdown select {
+  padding: 6px 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  background-color: #ffffff; /* White background for the select element */
+  color: #333; /* Text color for the selected option */
+  width: 100%;
+}
+
+/* Style for the dropdown options (limited control) */
+.dropdown select option {
+  background-color: #ffffff; /* White background for options */
+  color: #333; /* Text color for options */
+}
+
+/* Optional: Add hover and focus styles for better UX */
+.dropdown select:hover,
+.dropdown select:focus {
+  border-color: #fff; /* Change border color on hover/focus */
+  outline: none; /* Remove default outline */
+  background-color: #fff; /* Optional: Change background on hover/focus */
+}
+
+/* Responsive adjustments for screen sizes */
+@media (max-width: 768px) {
+  .dropdown {
+      flex-basis: 30%; /* Three items per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .dropdown {
+      flex-basis: 100%; /* Stacks items for small screens */
+  }
+}

@@ -1,0 +1,71 @@
+.home-header {
+    display: flex;
+    padding: 20px;
+    background-color: #f0f0f0; /* Adjust this color to match your existing navbar color scheme */
+    border-bottom: 1px solid #ddd; /* Add a border to separate the header from the content */
+  }
+  
+  
+  
+  /* Flex values to ensure proper alignment */
+  .header-left {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1.7; /* Adjust as needed to fit your image size */
+    font-size: 18px;
+  }
+  
+  
+  .header-middle {
+    flex: 5;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    padding-left: 20px;
+    border-left: 1px solid #333;
+    padding-right: 0px;
+}
+
+  
+  .header-right {
+    flex: 1.7; /* Slightly smaller than the middle, but larger than the left */
+    padding-left: 20px; /* Add space before the line */
+    border-left: 1px solid #333; /* Vertical line */
+    padding-right: 20px; /* Add space after the line */
+    flex-direction: column; 
+    justify-content: flex-start; /* Aligns the content to the start (top) */
+  }
+  
+  .header-image {
+    max-width: 120px; /* Adjust the size as needed */
+    max-height: 60px;
+  }
+  
+  .description-text {
+    margin-left: 10px; /* Spacing between icon and text */
+    color: #333; /* Adjust to match your color scheme */
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    color: #333; /* Adjust to match your color scheme */
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adds space between the sections */
+  }
+  
+  .section:last-child {
+    margin-bottom: 0; /* Remove the margin from the last section */
+  }
+  
+  .section span {
+    color: #555; /* Adjust to match your color scheme */
+    font-size: 14px;
+  }
+  

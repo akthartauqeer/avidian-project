@@ -1,0 +1,8 @@
+
+
+/* Apply DINNextLTPro to all elements */
+* {
+ 
+  scroll-behavior: smooth;
+  font-family: 'DINNextLTPro', sans-serif; /* Use DIN Next LT Pro font */
+}

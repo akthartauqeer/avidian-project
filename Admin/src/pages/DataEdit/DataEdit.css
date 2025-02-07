@@ -1,0 +1,129 @@
+.containner {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start */
+    height: 90vh; /* Full screen height */
+    width: 98%;
+    padding-left: 10px; /* No padding */
+    padding-right: 20px;
+    margin-top: 40px;
+    overflow-x: auto;
+    margin-bottom: 40px;
+    
+    }
+    .containner .rando {
+        font-size: 1.8rem;
+        text-align: left; /* Change from center to left */
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .containner .content {
+        width: 100%; /* Take up a large portion of the screen */
+        /* Limit content width */
+        background-color:white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* A slight shadow for depth */
+        padding: 20px 20px 0px 20px; /* Padding around the content */
+    }
+    
+    .containner .page {
+        width: 100%;
+    }
+    
+    .containner .random {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    .containner .add-program-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .containner .input {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .containner .input-group,
+    .containner .query-row,
+    .containner .pdf-upload-row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .containner .pdf-upload-row {
+        margin-right: 20px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+    }
+    
+    .containner .pdf-upload-input {
+        flex: 1;
+    }
+    
+    .containner .pdf-name-input {
+        flex: 3;
+        margin-left: 10px;
+    }
+    
+    .containner .add-pdf-btn-inline {
+        flex: 1;
+        width: 10%;
+        margin-left: 0px;
+        padding: 5px 10px;
+        background-color: #4CAF50; /* Green background for buttons */
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .containner .add-pdf-btn-inline:hover {
+        background-color: #4CAF50; /* Green background for buttons */
+    }
+    
+    .containner .query-input {
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .containner .add-query-btn {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #4CAF50; /* Green background for buttons */
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        align-self: flex-start;
+    }
+    
+    
+    
+    .submit-btn-container {
+        text-align: center;
+    }
+    
+    .submit-btn {
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .submit-btn:hover {
+        background-color: #218838;
+    }
+    

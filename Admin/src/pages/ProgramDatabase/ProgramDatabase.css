@@ -1,0 +1,170 @@
+.program-database-container {
+    width: 96.5%;
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.program-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: start;
+}
+
+.program-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.program-button:hover {
+    background-color: #e0e0e0;
+}
+
+.program-icon {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-right: 15px;
+}
+
+.program-button-text {
+    flex-grow: 1;
+}
+
+.program-action-icon {
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+.modal-content {
+    position: fixed; /* Position it fixed to overlay the whole screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    background-color: white; /* Modal background */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Make sure it appears above other content */
+    padding: 20px;
+    width: 300px; /* Width of the modal */
+    
+}
+
+.modal-header {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+align-items: center;
+justify-content: center;}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px; /* Font size for close button */
+    color: #333; /* Color for close button */
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Full width for button spacing */
+}
+
+.save-button {
+    padding: 10px 15px;
+    margin: 5px; /* Space between buttons */
+    cursor: pointer;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+.save-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.program-wrapper {
+    margin-bottom: 10px;
+}
+.program-options {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 20px;
+    background-color: #f9f9f9;
+    border-radius: 0 0 5px 5px;
+}
+.program-wrapper.expanded {
+    transition:0.3s ease, opacity 0.1s ease; /* Transition for height and opacity */
+    
+    background-color: white; /* Light background for expanded section */
+    border: 1px solid #ddd; /* Border for distinction */
+    padding: 10px; /* Padding for spacing */
+  }
+  
+.option-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.edit-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+
+
+
+
+.delete-confirm {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-confirm:hover {
+    background-color: #d32f2f;
+}
+
+.cancel-button {
+    background-color: #ccc;
+    color: #333;
+}
+

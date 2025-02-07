@@ -1,0 +1,124 @@
+/* Ensure that the body takes up the full height of the viewport */
+.login-body {
+    background-image: url('/backg.jpg');
+    background-size: cover;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0;
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(175px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white; 
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.wrapper img {
+    height: 120px;
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: -50px;
+    margin-top: -50px;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0; 
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+    color: white; /* Text color for input */
+}
+
+.input-box input::placeholder {
+    color: white; /* Placeholder color */
+    opacity: 0.7; /* Dim the placeholder text */
+}
+
+.input-box input:focus::placeholder {
+    opacity: 0.3; /* Make the placeholder text more dim when focused */
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: white;
+}
+
+.wrapper .forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.txt{
+    margin-left:75px;
+}
+
+.forgot a {
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+}
+.forgot a:active {
+    color: lightgray; /* Optional: Change color on click if desired */
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper button {
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.wrapper button:hover {
+    background: rgb(133, 133, 228);
+    color: white;
+}
+
+.forgot-password-buttons {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: space-between; /* Space out buttons */
+    margin-top: 15px; /* Adjust margin as necessary */
+}
+
+.forgot-password-buttons button {
+    flex: 1; /* Each button takes equal space */
+    margin: 0 5px; /* Add a small margin between buttons */
+    height: 40px; /* Adjust height for consistency */
+    font-size: 14px; /* Adjust font size if needed */
+}

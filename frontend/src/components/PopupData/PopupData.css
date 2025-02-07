@@ -1,0 +1,42 @@
+.popup-containerr {
+    padding: 20px;
+}
+
+.pdf-files-container,
+.queries-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: center;justify-content: center;text-align: center;
+
+}
+.pdf-files-container{
+    margin-bottom: 60px;
+}
+.pdf-file,
+.query-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.book-icon,
+.query-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 8px;
+}
+
+.query-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.query-icon-wrapper:hover {
+    transform: scale(1.05);
+}

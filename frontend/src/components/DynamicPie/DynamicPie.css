@@ -1,0 +1,38 @@
+/* DynamicPie.css */
+.pie-chart-container {
+    display: inline-block;
+    border-radius: 10px;padding: 10px;
+    text-align: center;
+    align-items: center;
+    vertical-align: top;
+}
+
+.pie-chart-container .chart-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-chart-container h4 {
+    margin: 0;
+    display: inline-block;
+}
+
+.download-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.pie-chart-container:hover .download-icon {
+    opacity: 1; /* Show icon on hover */
+}
+
+.pie {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    width: 60%;
+}

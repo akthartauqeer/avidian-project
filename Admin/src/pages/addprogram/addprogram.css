@@ -1,0 +1,116 @@
+/* addprogram.css */
+
+.program-container {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    margin-top: 20px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: auto; /* Allow height to adjust based on content */
+    max-width: 100%; /* Ensure it does not exceed the screen width */
+    overflow-x: auto;
+}
+
+.add-program-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space between cards */
+    align-items: flex-start; /* Align titles to the top */
+    width: 100%; /* Make sure it takes the full width */
+    gap: 200px; /* Increase spacing between cards */
+    padding-left: 80px; /* Add padding on the left inside container */
+    padding-right: 80px; /* Add padding on the right inside container */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column; /* Stack card and title vertically */
+    align-items: center; /* Center align card and title */
+    max-width: 500px; /* Increased max width for each card */
+    flex: 1; /* Allow cards to grow and shrink */
+    margin-bottom: 20px; /* Space below each card */
+}
+
+.card {
+    width: 150%; /* Use full width of the card container */
+    height: 225px; /* Fixed height */
+    background-image: url('/testbac.png');
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card-title {
+    margin-top: 10px; /* Add some space above the title */
+    margin-bottom: 20px; /* Add margin below the title for spacing */
+    color: #000; /* Change text color if needed */
+    cursor: pointer; /* Make title clickable */
+    text-align: center; /* Center the title text */
+    font-size: 1.5rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .add-program-container {
+        gap: 100px; /* Decrease gap for smaller screens */
+        padding-left: 40px; /* Adjust padding for smaller screens */
+        padding-right: 40px; 
+    }
+
+    .card-container {
+        max-width: 400px; /* Decrease card width for medium screens */
+    }
+
+    .card {
+        width: 130%; /* Adjust card width */
+    }
+}
+
+@media (max-width: 800px) {
+    .add-program-container {
+        gap: 50px; /* Further decrease gap */
+        padding-left: 20px; /* Adjust padding for smaller screens */
+        padding-right: 20px; 
+    }
+
+    .card-container {
+        max-width: 300px; /* Decrease card width for smaller screens */
+    }
+
+    .card {
+        width: 100%; /* Use full width of card container */
+    }
+
+    .card-title {
+        font-size: 1.25rem; /* Smaller title font size */
+    }
+}
+
+@media (max-width: 500px) {
+    .add-program-container {
+        gap: 30px; /* Adjust gap for very small screens */
+        padding-left: 10px; /* Minimal padding */
+        padding-right: 10px; 
+    }
+
+    .card-container {
+        max-width: 250px; /* Further decrease card width */
+    }
+
+    .card {
+        height: 200px; /* Adjust height for small screens */
+    }
+
+    .card-title {
+        font-size: 1rem; /* Even smaller title font size */
+    }
+}

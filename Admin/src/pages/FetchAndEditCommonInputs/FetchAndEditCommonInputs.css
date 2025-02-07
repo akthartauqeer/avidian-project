@@ -1,0 +1,116 @@
+.expandable-container .modal-content h4 {
+    margin-bottom: 20px;
+}
+.custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    color: #333;
+    margin-left: 10px; /* Adds spacing between the image and button */
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+.field-section input[type="text"] {
+    width: 100%;
+}
+
+  
+.expandable-container .modal-content button {
+    margin: 10px;
+    padding: 8px 16px;
+}
+.Submit-button{
+    display: flex;
+    align-items: center;justify-content: center;
+    margin-top: 20px;
+}
+
+.expandable-container {
+    max-height: 85vh;
+    background-color: white;
+    margin-top: 20px;
+margin-bottom: 40px;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px; /* Container padding */
+    border-radius: 10px;
+}
+
+.expandable-container .field-section {
+    margin: 10px;
+}
+
+.expandable-container .array-field {
+    padding-left: 20px; /* Indentation for array items */
+    margin-top: 10px; /* Spacing between the section and array items */
+}
+
+.array-field .object-item,
+.array-field > div {
+    margin: 10px 0;
+    padding-left: 10px; /* Padding for nested fields */
+    border-left: 2px solid #ddd; /* Optional: visual cue for nested items */
+}
+
+/* Additional style for sub-fields to indent more */
+.array-field .object-item div {
+    padding-left: 20px; /* Extra indentation for sub-fields */
+}
+
+h5 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/* Button styling for Save Changes */
+.expandable-container button {
+    background-color: #4CAF50; /* Change button color */
+    color: white; /* Ensure text is visible */
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items:spa;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px; /* Optional: add rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.expandable-container button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+.filter-item h5 {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .filter-item div {
+    display: none;
+  }
+  
+  .filter-item.expanded div {
+    display: block;
+  }
+  
+
+  .delete-confirm {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-confirm:hover {
+    background-color: #d32f2f;
+}
+
+.modal-content .cancel-button {
+    background-color: #ccc;
+    color: #333;
+}

@@ -1,0 +1,64 @@
+.dynamic-card {
+  display: flex;
+  flex-direction: column;
+  width: 5cm; /* Adjust based on your design */
+  height: 3cm; /* Consistent height */
+  margin: 10px; /* Space between cards */
+  box-sizing: border-box; /* Ensure padding doesn't overflow */
+  border: none; /* Remove any border */
+  border-radius: 7px; /* Add rounded corners */
+border: #dedede 1px solid;}
+
+.card-header {
+  flex: 1;
+  background-color: #eeebf7; /* Light grey for the header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem; /* Reduced font size for representationName */
+  padding: 5px; /* Padding inside the header */
+  text-align: center;
+}
+
+.card-body {
+  flex: 2; /* Slightly larger body compared to the header */
+  background-color: #e0e0e0; /* Slightly darker for the body */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* To position the info icon */
+  text-align: center; /* Centrally align the text */
+  cursor: default;
+}
+
+.info-icon {
+  position: absolute;
+  bottom: 5px; /* Position the icon at the bottom-right */
+  right: 5px; /* Adjust position inside the card */
+  font-size: 1.2rem; /* Adjust size of the info icon */
+}
+
+.card-info-popup {
+  display: none; /* Hidden by default */
+  position: absolute;
+  bottom: 110%; /* Position the popup above the icon */
+  right: 0; /* Align it to the right */
+  background-color: rgba(0, 0, 0, 0.75); /* Dark background for visibility */
+  color: #fff; /* White text for contrast */
+  padding: 5px 10px; /* Padding for the info box */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 0.9rem; /* Smaller font size for the info */
+  white-space: nowrap; /* Prevent text wrapping */
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+.info-icon:hover + .card-info-popup {
+  display: block; /* Show popup when the icon is hovered */
+}
+
+.card-body p {
+  margin: 0;
+  font-size: 1.2rem; /* Size for the main content inside the body */
+  text-align: center; /* Center-align the text */
+}

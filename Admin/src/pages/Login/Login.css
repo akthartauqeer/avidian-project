@@ -1,0 +1,57 @@
+/* Login.css */
+.login-page {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: beige; /* Optional: Set a background color */
+}
+
+.login-containner {
+  border-radius: 5px;
+  padding: 20px; /* Add some padding */
+  margin-top: -100px;
+  width: 600px; /* Set a fixed width for the container */
+}
+
+.login-page h2 {
+  margin-bottom: 20px;
+  text-align: center; /* Center the heading */
+}
+
+.login-page .input-group {
+  margin-bottom: 20px;
+  width: 100%; /* Use full width of the container */
+}
+
+.login-page input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.login-page .login-button {
+  width: 50%; /* Set a smaller width for the button */
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  display: block; /* Make it a block element */
+  margin: 0 auto; /* Center the button */
+}
+
+.login-page .login-button:hover {
+  background-color: #0056b3;
+}
+
+.login-page .error-message {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
