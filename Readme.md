@@ -17,6 +17,7 @@ Admin Panel directory -Admin
 
 ## Video Walkthrough
 [Video walkthrough link will be added here]
+https://drive.google.com/drive/folders/1i6-UbsikHumdItU6hoSl6m5S3KGAPd0o
 
 ## How to Clone the Repository
 ```sh
