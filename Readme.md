@@ -67,3 +67,6 @@ After cloning the repository, follow these steps:
 3. Paste the contents from the email into this file.
 4. Run the `docker-compose up --build` command to start the project.
 
+The credentials to login on the webiste both frontend and admin is 
+email - akthartauqer@gmail.com password - T@uqeer14
+
