@@ -19,9 +19,12 @@ Admin Panel directory -Admin
 [Video walkthrough link will be added here]
 https://drive.google.com/drive/folders/1i6-UbsikHumdItU6hoSl6m5S3KGAPd0o
 
+## Website Summary docs
+https://docs.google.com/document/d/1eI0LMbFNkb9TnqX_J8lKVhU9ilLqLglurAWCds21uU4/edit?tab=t.0
+
+
 ## How to Clone the Repository
 ```sh
-# Clone the repository
 # Clone the repository
 git clone https://github.com/akthartauqeer/avidian-project.git
 
@@ -37,7 +40,7 @@ Since the project includes a `docker-compose.yml` file, it can be easily run usi
 ```sh
 # Make sure Docker is installed and running
 
-# Navigate to the project directory
+##Navigate to the project directory
 cd avidian-project
 
 # Build and start the containers
@@ -67,6 +70,6 @@ After cloning the repository, follow these steps:
 3. Paste the contents from the email into this file.
 4. Run the `docker-compose up --build` command to start the project.
 
-The credentials to login on the webiste both frontend and admin is 
-email - akthartauqer@gmail.com password - T@uqeer14
+## The credentials to login on the webiste both frontend and admin is 
+email - info@avidian.com password - D@shWeb123
 
